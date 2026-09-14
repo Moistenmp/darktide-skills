@@ -1,0 +1,4 @@
+interface:
+  display_name: "Darktide Lua Source Search"
+  short_description: "Acquire and query Darktide Lua source"
+  default_prompt: "Use $darktide-source-search to locate or acquire the relevant Darktide Lua source and investigate this code question."
