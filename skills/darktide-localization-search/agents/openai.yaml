@@ -1,0 +1,4 @@
+interface:
+  display_name: "Darktide Localization Search"
+  short_description: "Search Darktide translations and localization keys"
+  default_prompt: "Use $darktide-localization-search to find the relevant localization text and its candidate keys."
