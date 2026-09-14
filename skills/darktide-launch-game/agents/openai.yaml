@@ -1,0 +1,4 @@
+interface:
+  display_name: "Darktide Launcher"
+  short_description: "Launch Darktide or hide and show its window"
+  default_prompt: "Use $darktide-launch-game to launch or check Darktide, or hide and show its existing window."
