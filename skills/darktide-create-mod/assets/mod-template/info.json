@@ -1,0 +1,6 @@
+{
+  "name": "%%title",
+  "description": "%%description",
+  "version": "%%version",
+  "author": "%%author"
+}

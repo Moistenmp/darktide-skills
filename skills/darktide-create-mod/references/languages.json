@@ -1,0 +1,18 @@
+{
+  "source": "Darktide localization_manager.lua canonical language IDs",
+  "primary": "en",
+  "languages": {
+    "en": "English",
+    "de": "German",
+    "es": "Spanish",
+    "fr": "French",
+    "it": "Italian",
+    "ja": "Japanese",
+    "ko": "Korean",
+    "pl": "Polish",
+    "pt-br": "Portuguese (Brazil)",
+    "ru": "Russian",
+    "zh-cn": "Chinese (Simplified)",
+    "zh-tw": "Chinese (Traditional)"
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Darktide Create Mod"
+  short_description: "Create a portable Darktide mod scaffold with metadata"
+  default_prompt: "Use $darktide-create-mod to create a new Darktide mod from the skill's bundled templates."
