@@ -1,0 +1,4 @@
+interface:
+  display_name: "Darktide Diagnosis"
+  short_description: "Diagnose Darktide problems from logs and runtime evidence"
+  default_prompt: "Use $darktide-diagnosis to investigate this Darktide problem using the evidence from the affected session."
