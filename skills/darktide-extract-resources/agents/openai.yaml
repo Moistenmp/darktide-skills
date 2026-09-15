@@ -1,0 +1,4 @@
+interface:
+  display_name: "Darktide Resource Extraction"
+  short_description: "Extract Darktide resources, textures, and audio"
+  default_prompt: "Use $darktide-extract-resources to extract the requested game resources and convert them to the needed format."
