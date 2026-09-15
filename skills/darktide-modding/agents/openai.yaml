@@ -1,0 +1,4 @@
+interface:
+  display_name: "Darktide Modding"
+  short_description: "Develop and manage mods with DML and DMF"
+  default_prompt: "Use $darktide-modding to work on this mod's installation, DMF integration, hooks, or reload behavior."
