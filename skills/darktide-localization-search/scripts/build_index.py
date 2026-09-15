@@ -1,4 +1,4 @@
-"""Build an independent Darktide localization index from DTMT SJSON output."""
+"""Build an independent Darktide localization index from readable SJSON files."""
 
 import argparse
 import json
