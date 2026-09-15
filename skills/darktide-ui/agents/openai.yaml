@@ -1,0 +1,4 @@
+interface:
+  display_name: "Darktide UI"
+  short_description: "Understand and build Darktide native Lua interfaces"
+  default_prompt: "Use $darktide-ui to understand or implement the requested native game interface."
