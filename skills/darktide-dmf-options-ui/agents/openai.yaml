@@ -1,0 +1,4 @@
+interface:
+  display_name: "Darktide DMF Options UI"
+  short_description: "Build and debug DMF mod settings pages"
+  default_prompt: "Use $darktide-dmf-options-ui when a DMF option does not appear, is not a tab, shows nothing, or when writing an options table with dropdowns, groups, or colour pickers."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Darktide Verify Patch"
+  short_description: "Prove a patch took effect, or find why it did not"
+  default_prompt: "Use $darktide-verify-patch to check whether this data patch actually reaches the value the game reads at runtime."

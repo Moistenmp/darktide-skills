@@ -1,0 +1,4 @@
+interface:
+  display_name: "Darktide Check Your Checker"
+  short_description: "Prove a mod validator catches real defects"
+  default_prompt: "Use $darktide-check-your-checker when writing or changing a validator, precheck, or lint for Darktide mod code, and when a check reports success or an implausible number of problems."
