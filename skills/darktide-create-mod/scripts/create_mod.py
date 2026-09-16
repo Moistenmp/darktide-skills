@@ -78,7 +78,11 @@ def validate_url(label: str, value: str | None) -> str | None:
         return None
 
     parsed = urlparse(value)
-    if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+    if (
+        re.search(r"[\s\x00-\x1f\x7f]", value)
+        or parsed.scheme not in {"http", "https"}
+        or not parsed.hostname
+    ):
         raise ValueError(f"{label} must be an HTTP or HTTPS URL")
     return value
 

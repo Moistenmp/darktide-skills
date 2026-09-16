@@ -217,13 +217,18 @@ function Invoke-Sqlite {
     $start.RedirectStandardError = $true
     $start.StandardOutputEncoding = $script:Utf8
     $start.StandardErrorEncoding = $script:Utf8
-    $process = [Diagnostics.Process]::Start($start)
+    $inputEncoding = [Console]::InputEncoding
+    try {
+        # .NET Framework derives the stdin writer's encoding from the console.
+        [Console]::InputEncoding = $script:Utf8
+        $process = [Diagnostics.Process]::Start($start)
+    } finally {
+        [Console]::InputEncoding = $inputEncoding
+    }
     try {
         $outputTask = $process.StandardOutput.ReadToEndAsync()
         $errorTask = $process.StandardError.ReadToEndAsync()
-        $bytes = $script:Utf8.GetBytes($command.ToString())
-        $process.StandardInput.BaseStream.Write($bytes, 0, $bytes.Length)
-        $process.StandardInput.BaseStream.Flush()
+        $process.StandardInput.Write($command.ToString())
         $process.StandardInput.Close()
         $process.WaitForExit()
         $output = $outputTask.GetAwaiter().GetResult()

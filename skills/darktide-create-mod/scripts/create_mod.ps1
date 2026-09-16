@@ -42,7 +42,7 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
-$validModName = '^[A-Za-z0-9][A-Za-z0-9_-]*$'
+$validModName = '\A[A-Za-z0-9][A-Za-z0-9_-]*\z'
 $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
 $titleWasSupplied = $PSBoundParameters.ContainsKey('Title')
 $homepageWasSupplied = $PSBoundParameters.ContainsKey('Homepage')
@@ -109,7 +109,7 @@ function Get-ValidatedUrl {
 
 	$uri = $null
 	$isValid = [System.Uri]::TryCreate($Value, [System.UriKind]::Absolute, [ref] $uri)
-	if (-not $isValid -or $uri.Scheme -notin @('http', 'https') -or -not $uri.Host) {
+	if ($Value -match '[\s\x00-\x1f\x7f]' -or -not $isValid -or $uri.Scheme -notin @('http', 'https') -or -not $uri.Host) {
 		throw "$Label must be an HTTP or HTTPS URL"
 	}
 

@@ -36,6 +36,6 @@ The examples use Windows tools. On Linux, limn needs Wine to load the game's Win
   & '<dtmt-executable>' bundle list '<game>/bundle/<bundle-hash>'
   ```
 
-  A resource may appear in several bundles, including entries without payload data.
+  A resource may appear in several bundles, including entries without payload data. The database's file index can omit resources even when their bundle is registered, so a `find-file` miss is not proof of absence. Inspect a known candidate with `bundle list`, or use limn with a name/hash selection dictionary and the requested type against the bundle directory.
 
 - **Model-related resources:** For resources such as `bones` and `material`, see [Bitsquid Blender Tools](https://gitlab.com/qasikfwn/bitsquid-blender-tools) and its current Blender import support.
