@@ -169,15 +169,12 @@ Two properties worth copying from an implementation that works:
 
 ## Related
 
-**The four skills below are not part of this repository.** They are upstream work by a different
-author, published at <https://github.com/deluxghost/darktide-skills>. They are listed because
-they are genuinely complementary, but you will not find them here — fetch them from that
-repository separately.
+Four sibling skills in this repository cover the steps before and after this one:
 
-- `darktide-modding` (upstream) — DMF hook, settings, lifecycle, and reload mechanics
-- `darktide-dt-cli` (upstream) — live log streaming and **live Lua state queries** in a running
+- `darktide-modding` — DMF hook, settings, lifecycle, and reload mechanics
+- `darktide-dt-cli` — live log streaming and **live Lua state queries** in a running
   game. This is the natural way to read a live table for segment 4 instead of inferring it.
-- `darktide-diagnosis` (upstream) — reading logs and tracing a cause **from a symptom**. That
+- `darktide-diagnosis` — reading logs and tracing a cause **from a symptom**. That
   skill is broader than "when something throws": it also covers intervals where no exception
   explains the symptom, using state/connection/subsystem messages instead.
   **The difference from this skill is the direction of the question.**
@@ -185,11 +182,4 @@ repository separately.
   This skill starts from *a change you made* and asks whether it reached the value the game
   reads at runtime — a case where there may be no symptom at all, because the change was
   accepted silently and simply had no effect.
-- `darktide-source-search` (upstream) — obtaining and querying the decompiled source tree
-
-## Format note
-
-Upstream skills carry a richer frontmatter (`license`, `metadata.author`, `metadata.version`,
-`metadata.repository`) than this draft does. Those are **deliberate omissions, not oversights**:
-the license and the publishing identity are the project owner's decisions and have not been
-made. See [`../README.md`](../README.md).
+- `darktide-source-search` — obtaining and querying the decompiled source tree
