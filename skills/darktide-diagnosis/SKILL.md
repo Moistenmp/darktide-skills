@@ -31,7 +31,7 @@ Windows PC locations, under the affected account:
 
 These are not Xbox console paths. `%APPDATA%` refers to the account's roaming application-data directory, not the game installation.
 
-Console files are named `console-*.log`. The filename time is UTC; headers marked `UTC time stamps` also use UTC within the log. `[Session]` identifies the session. File size and modification time help select candidates, but multiple installations of the same distribution may share this directory. Match the session and incident interval, not just the newest filename. Old logs can be removed by game log cleanup.
+Console files are named `console-*.log`. The filename time is UTC; headers marked `UTC time stamps` also use UTC within the log. `[Session]` identifies the session. File size and modification time help select candidates, but multiple installations of the same distribution may share this directory. Use file metadata to select the target log within the scope of the request, then verify its session and incident interval rather than relying on the filename alone. Read additional logs only when specific evidence requires it. Older console logs may no longer be available due to Darktide's own log cleanup.
 
 The parent profile directory may contain `darktide_launcher.log` for launcher, shader-cache builder, or GPU selection problems, even when no console log was created. Bypassing the launcher can leave this file stale.
 
