@@ -15,15 +15,23 @@ Create intermediate directories only when needed. On success or failure, remove 
 ## External Tools
 
 - [limn releases](https://github.com/manshanko/limn/releases): extract Darktide bundles.
-- [LuaJIT Decompiler v2 — Aussiemon's fork](https://github.com/Aussiemon/luajit-decompiler-v2): includes Fatshark-specific bytecode support. Reuse an executable built from this fork, or build it from source.
+- [LuaJIT Decompiler v2](https://github.com/Aussiemon/luajit-decompiler-v2): a fork with Fatshark-specific bytecode support.
 
 Reuse tools located through user/context paths, project records, or `PATH`. Keep new tool packages in the workspace's tool directory, separate from the skill and game data, and retain the selected release or commit identity. Existing suitable installations need not be moved or upgraded.
 
 The commands below use PowerShell and Windows executables. On Linux, limn requires Wine because it loads the game's decompression library; the Windows decompiler also needs an appropriate execution environment.
 
-## Build The Decompiler When Needed
+## Obtain The Decompiler
 
-If no suitable executable is available, clone Aussiemon's fork into `<decompiler-source>` under the tool directory. The repository does not include a build project. Use an x64 Visual Studio Developer PowerShell with MSVC C++ tools and the Windows SDK, and choose `<task-temp>/decompiler-build` as `<build-directory>`.
+Use either a prebuilt release or a local build of the same source fork.
+
+### Prebuilt Release
+
+Download `luajit-decompiler-v2-windows-x64.zip` from the [prebuilt releases](https://github.com/deluxghost/luajit-decompiler-v2/releases).
+
+### Build From Source
+
+Clone the [source fork](https://github.com/Aussiemon/luajit-decompiler-v2) into `<decompiler-source>` under the tool directory. The repository does not include a build project. Use an x64 Visual Studio Developer PowerShell with MSVC C++ tools and the Windows SDK, and choose `<task-temp>/decompiler-build` as `<build-directory>`.
 
 The source requires C++20 and `/J` (unsigned plain `char`). Compile its five translation units directly; `user32.lib` and `comdlg32.lib` supply the Windows UI functions, while the source already links `shlwapi.lib`:
 
