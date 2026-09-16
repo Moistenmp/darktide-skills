@@ -1,6 +1,12 @@
 ---
 name: darktide-localization-search
 description: "Acquire and query Warhammer 40,000: Darktide localization data. Use to resolve localization keys, search translated text, compare languages, or trace displayed text back to candidate keys."
+license: MIT
+compatibility: "For indexing and queries: Python 3.10+ with sqlite3, or Windows with Windows PowerShell 5.1 or PowerShell 7 and the SQLite CLI."
+metadata:
+  author: deluxghost
+  version: "1.0.0"
+  repository: https://github.com/deluxghost/darktide-skills
 ---
 
 # Darktide Localization Search

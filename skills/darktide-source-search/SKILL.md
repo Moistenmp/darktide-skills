@@ -1,6 +1,11 @@
 ---
 name: darktide-source-search
 description: "Acquire and query Warhammer 40,000: Darktide Lua source. Use to obtain readable game scripts or locate APIs, classes, modules, UI/HUD code, weapon and talent settings, and gameplay logic for mod development or investigation."
+license: MIT
+metadata:
+  author: deluxghost
+  version: "1.0.0"
+  repository: https://github.com/deluxghost/darktide-skills
 ---
 
 # Darktide Lua Source Search

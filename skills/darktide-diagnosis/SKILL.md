@@ -1,6 +1,11 @@
 ---
 name: darktide-diagnosis
 description: "Diagnose Warhammer 40,000: Darktide game and mod problems from logs, runtime observations, and source code. Use for errors, crashes, hangs, disconnects, incorrect behavior, or performance problems, including reports from other users and sessions that have already ended."
+license: MIT
+metadata:
+  author: deluxghost
+  version: "1.0.0"
+  repository: https://github.com/deluxghost/darktide-skills
 ---
 
 # Darktide Diagnosis

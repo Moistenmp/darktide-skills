@@ -1,6 +1,12 @@
 ---
 name: darktide-create-mod
 description: "Create a Warhammer 40,000: Darktide mod from bundled templates. Use when scaffolding or initializing a new mod with its Lua entrypoints, .mod file, and info.json metadata."
+license: MIT
+compatibility: "Python 3.10+, or Windows with Windows PowerShell 5.1 or PowerShell 7."
+metadata:
+  author: deluxghost
+  version: "1.0.0"
+  repository: https://github.com/deluxghost/darktide-skills
 ---
 
 # Create a Darktide Mod

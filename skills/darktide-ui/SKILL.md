@@ -1,6 +1,11 @@
 ---
 name: darktide-ui
 description: "Understand, design, and modify Warhammer 40,000: Darktide native Lua UI. Use for views, HUD elements, widgets and pass templates, scenegraph layout, native styling, input and navigation, scrolling collections, and UI resource lifecycles."
+license: MIT
+metadata:
+  author: deluxghost
+  version: "1.0.0"
+  repository: https://github.com/deluxghost/darktide-skills
 ---
 
 # Darktide UI

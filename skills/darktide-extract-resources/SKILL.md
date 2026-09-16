@@ -1,6 +1,11 @@
 ---
 name: darktide-extract-resources
 description: "Extract Warhammer 40,000: Darktide resources from bundles, inspect resource dependencies, and obtain usable images and audio."
+license: MIT
+metadata:
+  author: deluxghost
+  version: "1.0.0"
+  repository: https://github.com/deluxghost/darktide-skills
 ---
 
 # Darktide Resource Extraction

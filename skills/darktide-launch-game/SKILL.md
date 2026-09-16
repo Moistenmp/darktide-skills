@@ -1,6 +1,12 @@
 ---
 name: darktide-launch-game
 description: "Launch Warhammer 40,000: Darktide on Windows, bypassing the Fatshark launcher. Use to start or check the game, or hide and show its window."
+license: MIT
+compatibility: "Windows with Windows PowerShell 5.1 or PowerShell 7."
+metadata:
+  author: deluxghost
+  version: "1.0.0"
+  repository: https://github.com/deluxghost/darktide-skills
 ---
 
 # Darktide Launcher

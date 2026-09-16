@@ -1,6 +1,11 @@
 ---
 name: darktide-modding
 description: "Develop and manage Warhammer 40,000: Darktide mods using DML and DMF. Use for developer-side mod installation and load order, framework integration, hook behavior, mod lifecycle, and in-game reloads."
+license: MIT
+metadata:
+  author: deluxghost
+  version: "1.0.0"
+  repository: https://github.com/deluxghost/darktide-skills
 ---
 
 # Darktide Modding
